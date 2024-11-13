@@ -25,8 +25,91 @@
                 src="./assets/images/loading-circle.svg"
                 width="70"
                 height="70"
-                alt="loading circle" />
+                alt="circle"
+                class="circle" />
         </div>
+        <!-- header -->
+        <header class="header" data-header>
+            <div class="container">
+                <a href="#" class="logo">
+                    <img
+                        src="./assets/images/logo.svg"
+                        height="40"
+                        width="40"
+                        alt="Noman Rafiq" />
+                </a>
+                <button
+                    class="nav-open-btn"
+                    aria-label="open menu"
+                    data-nav-toggler>
+                    <img
+                        src="./assets/images/menu.svg"
+                        width="17"
+                        height17
+                        alt="menu icon" />
+                </button>
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="#" class="logo">
+                            <img
+                                src="./assets/images/nav-logo.svg"
+                                width="140"
+                                height="140"
+                                alt="Noman Rafiq"
+                                class="img" />
+                        </a>
+                        <button
+                            class="nav-close-btn"
+                            aria-label="close menu"
+                            data-nav-toggler>
+                            <span class="span one"></span>
+                            <span class="span two"></span>
+                        </button>
+                    </div>
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="#home" class="navbar-link">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#gallery" class="navbar-link">Gallery</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#about" class="navbar-link">About</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#services" class="navbar-link">Services</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#portfolio" class="navbar-link"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#contact" class="navbar-link"
+                                >Contact Us</a
+                            >
+                        </li>
+                    </ul>
+                    <button class="login-btn">
+                        <img
+                            src="./assets/images/user.svg"
+                            width="21"
+                            height="21"
+                            alt="user icon" />
+                        <span class="span">Login</span>
+                    </button>
+                    <p class="navbar-title">My Address</p>
+                    <address class="navbar-text">Rawalpindi, Pakistan</address>
+                    <p class="navbar-text">
+                        Urgent issue? call us at
+                        <a href="tel:00923352765432" class="contact-link"
+                            >+92-335-2765432</a
+                        >
+                    </p>
+                </nav>
+                <div class="overlay" data-nav-toggler data-overlay></div>
+            </div>
+        </header>
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
