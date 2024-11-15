@@ -525,6 +525,35 @@ body.active {
     animation-play-state: paused;
 }
 
+.gallery .scroll-down {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-content: center;
+    margin-inline: auto;
+    margin-block-start: 55px;
+    border: 5px solid var(--white_a15);
+    transition: var(--transition-2);
+    animation: scrollDown 1s linear infinite alternate;
+    border-radius: var(--radius-circle);
+}
+.gallery .scroll-down img {
+    width: 22px;
+}
+.gallery .scroll-down:is(:hover, :focus-visible) {
+    background: var(--radical-red);
+    border-color: var(--radical-red);
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(12px);
+    }
+}
+
 /*-----------------------------------*\
   #CATEGORY
 \*-----------------------------------*/
