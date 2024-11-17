@@ -95,6 +95,7 @@ a {
 }
 img {
     height: auto;
+    width: 100%;
 }
 button {
     background: none;
@@ -721,6 +722,10 @@ body.active {
 .portfolio .portfolio-card {
     position: relative;
     margin-block-end: 50px;
+}
+.portfolio-card .img {
+    width: 100%;
+    height: auto;
 }
 .portfolio :is(.card-content, .portfolio-btn) {
     position: absolute;
