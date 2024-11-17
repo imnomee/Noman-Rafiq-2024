@@ -741,6 +741,7 @@ body.active {
     color: var(--white_a70);
     font-weight: var(--fw-300);
 }
+
 .portfolio-card .portfolio-btn {
     background: var(--black);
     outline: 1px solid white;
@@ -753,6 +754,7 @@ body.active {
     top: 20px;
     right: 20px;
 }
+
 .portfolio-card .portfolio-btn svg {
     width: 30px;
 }
@@ -792,17 +794,23 @@ body.active {
     margin-block: 20px 90px;
     line-height: normal;
 }
-.footer .btn-icon {
-    width: 60px;
-    height: 60px;
-    margin-inline: auto;
-}
-.footer .btn-icon:is(.btn-icon:is(:hover, :focus-visible)) {
-    background: var(--radical-red);
-}
 
-.footer .btn-icon img {
+.footer .footer-btn {
+    background: var(--white);
+    width: 55px;
+    height: 55px;
+    border-radius: var(--radius-circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    margin-block-start: 30px;
+}
+.footer .footer-btn img {
     width: 30px;
+}
+.footer .footer-btn:is(:hover, :focus-visible) {
+    background: var(--radical-red);
 }
 
 .footer .footer-bg {
