@@ -214,6 +214,15 @@ body.active {
     place-content: center;
     transition: var(--transition-2);
 }
+
+.section-subtitle {
+    color: var(--white_a25);
+    font-size: var(--fs-1);
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-family: var(--ff-gordita);
+}
+
 /*-----------------------------------*\
   #LOADING
 \*-----------------------------------*/
@@ -632,7 +641,58 @@ body.active {
 /*-----------------------------------*\
   #SERVICES
 \*-----------------------------------*/
+.service {
+    padding-inline: 15px;
+}
+.service .section-title {
+    padding-inline: 10px;
+    margin-block-end: 55px;
+}
 
+.service .service-card .img {
+    display: none;
+}
+.service .service-list > li:not(:last-child) {
+    border-block-start: 1px solid var(--white_a9);
+}
+.service .service-list > li:last-child {
+    border-block: 1px solid var(--white_a9);
+}
+.service-card {
+    padding: 30px 10px;
+}
+
+.service-card .card-subtitle {
+    color: var(--white_a50);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-300);
+    line-height: 1.5;
+    margin-block: 10px 25px;
+}
+.service-card .service-btn {
+    background: transparent;
+    outline: 1px solid white;
+    width: 55px;
+    height: 55px;
+    border-radius: var(--radius-circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-card .service-btn svg {
+    width: 30px;
+}
+
+.service-btn path {
+    transition: var(--transition-2);
+}
+.service-btn:is(:hover, :focus-visible) {
+    background: var(--white);
+}
+.service-btn:is(:hover, :focus-visible) path {
+    stroke: var(--black);
+    transform: rotate(1turn);
+}
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
