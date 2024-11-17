@@ -11,8 +11,13 @@
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="./assets//css/style.css" />
         <link rel="stylesheet" href="./assets/font/font.css" />
+        <link rel="preload" as="image" href="./assets//images/loading.svg" />
+        <link
+            rel="preload"
+            as="image"
+            href="./assets//images/loading-circle.svg" />
     </head>
-    <body>
+    <body id="top">
         <!-- Preloading -->
         <div class="loading" data-loading>
             <img
@@ -972,6 +977,101 @@
                 </section>
             </article>
         </main>
+        <footer class="footer">
+            <div class="footer-top section" id="contact">
+                <div class="container">
+                    <p class="section-subtitle" data-reveal>Contact Us</p>
+                    <h2 class="h2 section-title" data-reveal>
+                        Work inquiry, Job Opportunities? Send Message
+                    </h2>
+                    <a href="#" class="btn-icon" data-reveal>
+                        <img
+                            src="./assets/images/arrow-forward.svg"
+                            width="43"
+                            height="20"
+                            loading="lazy"
+                            alt="" />
+                    </a>
+                    <img
+                        src="./assets/images/footer-1.jpg"
+                        width="159"
+                        height="176"
+                        loading="lazy"
+                        alt="photography"
+                        data-reveal
+                        class="abs-img abs-img-1" />
+                    <img
+                        src="./assets/images/footer-2.jpg"
+                        width="265"
+                        height="275"
+                        loading="lazy"
+                        alt="photography"
+                        data-reveal
+                        class="abs-img abs-img-2" />
+                    <img
+                        src="./assets/images/footer-3.jpg"
+                        width="303"
+                        height="272"
+                        loading="lazy"
+                        alt="photography"
+                        data-reveal
+                        class="abs-img abs-img-3" />
+                    <img
+                        src="./assets/images/footer-4.jpg"
+                        width="175"
+                        height="175"
+                        loading="lazy"
+                        alt="photography"
+                        data-reveal
+                        class="abs-img abs-img-4" />
+                    <img
+                        src="./assets/images/footer-shape.svg"
+                        width="185"
+                        height="134"
+                        loading="lazy"
+                        alt="photography"
+                        class="shape" />
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img
+                            src="./assets/images/logo.svg"
+                            width="40"
+                            height="40"
+                            loading="lazy"
+                            alt="Noman Rafiq" />
+                    </a>
+                    <ul class="social-list">
+                        <li><a href="#" class="social-link"> Fa. </a></li>
+                        <li><a href="#" class="social-link"> Insta. </a></li>
+                        <li><a href="#" class="social-link"> Li. </a></li>
+                        <li><a href="#" class="social-link"> Tw. </a></li>
+                    </ul>
+                    <p class="copyright">Made with ove</p>
+                </div>
+            </div>
+            <div class="footer-bg has-before">
+                <img
+                    src="./assets/images/footer-bg.jpg"
+                    width="1920"
+                    height="1135"
+                    loading="lazy"
+                    alt="photography"
+                    class="img-cover" />
+            </div>
+        </footer>
+        <a
+            href="#top"
+            class="back-top-btn"
+            aria-label="back to top"
+            data-back-top-btn
+            >0%</a
+        >
+
+        <div class="cursor" data-cursor></div>
+
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
