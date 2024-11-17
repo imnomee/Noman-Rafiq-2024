@@ -696,7 +696,62 @@ body.active {
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
+.portfolio {
+    padding-block-end: 100px;
+}
+.portfolio .section-title {
+    margin-block-end: 60px;
+}
+.portfolio .portfolio-card {
+    position: relative;
+    margin-block-end: 50px;
+}
+.portfolio :is(.card-content, .portfolio-btn) {
+    position: absolute;
+    z-index: 1;
+}
+.portfolio-card .card-content {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 15px;
+}
+.portfolio-card .card-tag {
+    color: var(--white_a70);
+    font-weight: var(--fw-300);
+}
+.portfolio-card .portfolio-btn {
+    background: var(--black);
+    outline: 1px solid white;
+    width: 55px;
+    height: 55px;
+    border-radius: var(--radius-circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 20px;
+}
+.portfolio-card .portfolio-btn svg {
+    width: 30px;
+}
+.portfolio-card .portfolio-btn path {
+    stroke: var(--white);
+}
 
+.portfolio-card .card-title:is(:hover, :focus-visible) {
+    text-decoration: underline;
+}
+.portfolio-btn path {
+    transition: var(--transition-2);
+}
+.portfolio-btn:is(:hover, :focus-visible) {
+    background: var(--white);
+    outline: none;
+}
+.portfolio-btn:is(:hover, :focus-visible) path {
+    stroke: var(--black);
+}
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
