@@ -430,10 +430,9 @@ body.active {
 .hero .wrapper .strong {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    width: 300px;
+    width: 100%;
     font-weight: inherit;
+    font-size: var(--fs-3);
     display: flex;
     justify-content: center;
 }
@@ -442,6 +441,7 @@ body.active {
     font-weight: var(--fw-300);
     text-transform: uppercase;
     letter-spacing: 5px;
+    margin-block-end: 20px;
 }
 .hero .wrapper .space {
     padding: 0.1em;
@@ -662,6 +662,11 @@ body.active {
     100% {
         transform: rotate(360deg);
     }
+}
+.about .sign {
+    max-width: 80%;
+    width: 50%;
+    margin-top: -20px;
 }
 /*-----------------------------------*\
   #SERVICES
