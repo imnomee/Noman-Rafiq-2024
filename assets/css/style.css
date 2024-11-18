@@ -113,6 +113,7 @@ html {
     font-family: var(--ff-gordita);
     font-size: 10px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     background: var(--smokey-black);
@@ -325,13 +326,11 @@ body.active {
     transform: translateX(-280px);
     transition-duration: 0.5s;
 }
-.logo .img {
-    width: 130px;
+.logo {
+    width: 40px;
+    height: 40px;
 }
-.nav-close-btn {
-    width: 25px;
-    height: 25px;
-}
+
 .nav-close-btn .span {
     background: var(--white_a80);
     width: 25px;
