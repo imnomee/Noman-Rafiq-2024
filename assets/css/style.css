@@ -649,10 +649,19 @@ body.active {
 .about .shape-1 {
     display: block;
     position: absolute;
-    bottom: 10%;
+    top: -10%;
     left: 0;
     z-index: 1;
     width: 100px;
+    animation: rotateFull 10s linear infinite;
+}
+@keyframes rotateFull {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 /*-----------------------------------*\
   #SERVICES
