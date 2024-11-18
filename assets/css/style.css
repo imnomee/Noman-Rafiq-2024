@@ -432,7 +432,7 @@ body.active {
     top: 0;
     width: 100%;
     font-weight: inherit;
-    font-size: var(--fs-3);
+    font-size: var(--fs-4);
     display: flex;
     justify-content: center;
 }
