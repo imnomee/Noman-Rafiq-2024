@@ -78,6 +78,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 li {
     list-style: none;
@@ -1182,5 +1183,26 @@ body.active {
         width: 9%;
         right: 15%;
         bottom: 10%;
+    }
+    .cursor {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 75px;
+        height: 75px;
+        background: var(--white);
+        mix-blend-mode: exclusion;
+        border-radius: var(--radius-circle);
+        transform: translate(-50%, -50%) scale(0.35);
+        transition: transform 0.35s;
+        pointer-events: none;
+        z-index: 6;
+    }
+    .cursor.hovered {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    .cursor.disabled {
+        transform: translate(-50%, -50%) scale(0);
     }
 }

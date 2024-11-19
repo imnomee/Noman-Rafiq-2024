@@ -129,3 +129,30 @@ const scrollReveal = function () {
 window.addEventListener('scroll', scrollReveal);
 
 scrollReveal();
+
+//Cursor
+
+const cursor = document.querySelector('[data-cursor');
+const anchorElements = document.querySelectorAll('a');
+
+const buttons = document.querySelectorAll('button');
+///change cursorElement
+
+document.body.addEventListener('mousemove', (e) => {
+    setTimeout(() => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
+    }, 100);
+});
+
+const hoverActive = function () {
+    cursor.classList.add('hovered');
+};
+const hoverDeactive = function () {
+    cursor.classList.remove('hovered');
+};
+
+addEventOnElements(anchorElements, 'mouseover', hoverActive);
+addEventOnElements(anchorElements, 'mouseout', hoverDeactive);
+addEventOnElements(buttons, 'mouseover', hoverActive);
+addEventOnElements(buttons, 'mouseout', hoverDeactive);
