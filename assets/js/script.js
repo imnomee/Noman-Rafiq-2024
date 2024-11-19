@@ -156,3 +156,11 @@ addEventOnElements(anchorElements, 'mouseover', hoverActive);
 addEventOnElements(anchorElements, 'mouseout', hoverDeactive);
 addEventOnElements(buttons, 'mouseover', hoverActive);
 addEventOnElements(buttons, 'mouseout', hoverDeactive);
+
+document.body.addEventListener('mouseout', () => {
+    cursor.classList.add('disabled');
+});
+
+document.body.addEventListener('mouseover', () => {
+    cursor.classList.remove('disabled');
+});
