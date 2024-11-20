@@ -142,9 +142,11 @@ body.active {
     background: var(--white);
 }
 /*-----------------------------------*\
-  #REUSED STYLE
+  #REUSED STYLEs
 \*-----------------------------------*/
-
+.cursor {
+    display: none;
+}
 .container {
     padding-inline: 15px;
 }
@@ -678,6 +680,7 @@ body.active {
 \*-----------------------------------*/
 .service {
     padding-inline: 15px;
+    display: none;
 }
 .service .section-title {
     padding-inline: 10px;
@@ -753,9 +756,12 @@ body.active {
 }
 .portfolio-card .card-content {
     bottom: 0;
-    left: 0;
     width: 100%;
     padding: 20px 15px;
+    text-align: center;
+}
+.portfolio-card .card-content .card-title {
+    font-size: var(--fs-5);
 }
 .portfolio-card .card-tag {
     color: var(--white_a70);
@@ -1147,6 +1153,9 @@ body.active {
     }
     .about-content {
         order: 1;
+    }
+    .service {
+        display: block;
     }
 
     .service-card {
