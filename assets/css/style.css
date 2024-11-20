@@ -364,26 +364,14 @@ body.active {
 .navbar-link:is(:hover, :focus-visible) {
     color: var(--radical-red);
 }
-.login-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-    background: var(--radical-red);
-    color: var(--white);
-    padding: 8px 30px;
-    border-radius: var(--radius-5);
-    margin-block-end: 50px;
-}
-.login-btn .span {
-    font-weight: var(--fw-500);
+.navbar hr {
+    margin: 0 0 50px 0;
 }
 .navbar-title {
     font-size: var(--fs-8);
     font-weight: var(--fw-500);
     line-height: 1;
-    margin-block-end: 15px;
+    margin-block: 15px;
 }
 .navbar-text {
     color: var(--white_a75);
@@ -398,6 +386,19 @@ body.active {
 }
 .navbar .contact-link:is(:hover, :focus-visible) {
     text-decoration: underline;
+}
+.nav-social-list {
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--fs-5);
+    align-items: center;
+}
+.nav-social-list li {
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--white);
+    border-radius: var(--radius-circle);
+    text-align: center;
 }
 .overlay {
     position: fixed;
@@ -654,8 +655,9 @@ body.active {
     position: absolute;
     top: -10%;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     width: 100px;
+    opacity: 1;
     animation: rotateFull 10s linear infinite;
 }
 @keyframes rotateFull {
@@ -680,6 +682,7 @@ body.active {
 .service .section-title {
     padding-inline: 10px;
     margin-block-end: 55px;
+    text-align: center;
 }
 
 .service .service-card .img {
@@ -700,7 +703,7 @@ body.active {
     font-size: var(--fs-7);
     font-weight: var(--fw-300);
     line-height: 1.5;
-    margin-block: 10px 25px;
+    /* margin-block: 10px 25px; */
 }
 .service-card .service-btn {
     background: transparent;
@@ -734,6 +737,7 @@ body.active {
 }
 .portfolio .section-title {
     margin-block-end: 60px;
+    text-align: center;
 }
 .portfolio .portfolio-card {
     position: relative;
@@ -809,6 +813,7 @@ body.active {
 .footer-top .section-title {
     margin-block: 20px 90px;
     line-height: normal;
+    margin-left: 10px;
 }
 
 .footer .footer-btn {
@@ -854,10 +859,11 @@ body.active {
 .social-list {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 .social-link {
     font-weight: var(--fw-500);
+    font-size: var(--fs-7);
 }
 .social-link:is(:hover, :focus-visible) {
     text-decoration: underline;
@@ -1013,6 +1019,7 @@ body.active {
     }
     .service-card .card-title {
         margin-block-end: 10px;
+        font-size: var(--fs-5);
     }
     .service-card > div {
         max-width: 500px;
@@ -1152,6 +1159,10 @@ body.active {
         left: 70%;
         transform: translate(-50%, -50%);
         width: 200px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        background-clip: border-box;
         opacity: 1;
         visibility: hidden;
         transition: var(--transition-3);
